@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "myNewProject",
-    "slug": "myNewProject",
+    "name": "react_native_social",
+    "slug": "react-native-social",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -15,26 +15,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.olehorse.reactnativesocial",
+      "jsEngine": "jsc"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "jsEngine": "jsc",
+      "package": "com.olehorse.reactnativesocial"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "jsEngine": {
-      "jsEngine": "hermes",
-      "ios": {
-        "jsEngine": "jsc",
-        "supportsTablet": true
-      },
-      "android": {
-        "jsEngine": "jsc"
+    "jsEngine": "hermes",
+    "extra": {
+      "eas": {
+        "projectId": "301d0cb0-9646-452d-bd00-3c1ad3e1bb59"
       }
-    }
+    },
+    "owner": "olehorse"
   }
 }
